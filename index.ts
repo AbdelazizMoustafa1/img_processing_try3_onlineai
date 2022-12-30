@@ -5,6 +5,8 @@ import * as path from 'path';
 
 // Create an Express app
 const app = express();
+// Set the port
+const port = 4000;
 
 // Set up a route to handle image resizing
 app.get('/resize', (req, res) => {
@@ -42,6 +44,6 @@ app.get('/resize', (req, res) => {
 });
 
 // Start the server on port 4000
-app.listen(4000, () => {
-  console.log('Server listening on port 4000');
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
 });
